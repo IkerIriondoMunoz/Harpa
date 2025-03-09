@@ -6,7 +6,7 @@ public class SC_Movimiento : MonoBehaviour
     [SerializeField] private float runSpeed = 12f;
     private float currentSpeed;
 
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 2f;
     [SerializeField] private float gravity = -9.81f;
 
     public CharacterController characterController;

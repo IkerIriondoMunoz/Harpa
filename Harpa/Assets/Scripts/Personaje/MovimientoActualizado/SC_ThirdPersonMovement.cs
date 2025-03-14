@@ -5,9 +5,12 @@ public class SC_ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController cc;
     public Transform Camara;
+    public Animator animator;
 
 
     public float speed = 6f;
+    private Vector3 direccion;
+
 
     private bool cameraLock = false;
     public float turnSmoothTime = 0.1f;
@@ -18,6 +21,8 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         MovementManager();
         CameraLockManager();
 
+        animator.SetFloat("ZSpeed", direccion.z);
+        animator.SetFloat("XSpeed", direccion.x);
         if (Input.GetKeyDown(KeyCode.Q) && cameraLock == false)
         {
             cameraLock = true;
@@ -27,6 +32,8 @@ public class SC_ThirdPersonMovement : MonoBehaviour
             cameraLock = false;
         }
         Debug.Log(cameraLock);
+
+        Debug.Log(direccion);
     }
 
     void CameraLockManager()
@@ -35,7 +42,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
-            Vector3 direccion = transform.forward * vertical + transform.right * horizontal;
+            direccion = transform.forward * vertical + transform.right * horizontal;
 
             transform.rotation = Quaternion.Euler(0f,Camara.eulerAngles.y,0f);
             
@@ -48,7 +55,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
-            Vector3 direccion = new Vector3(horizontal, 0f, vertical).normalized;
+            direccion = new Vector3(horizontal, 0f, vertical).normalized;
 
             if (direccion.magnitude > 0.1f)
             {

@@ -16,13 +16,28 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     // Update is called once per frame
+
     void Update()
     {
         MovementManager();
         CameraLockManager();
 
-        animator.SetFloat("ZSpeed", direccion.z);
-        animator.SetFloat("XSpeed", direccion.x);
+        if (cameraLock == false)
+        {
+            // Modo "Freelook": Siempre reproduce la animación de caminar hacia adelante
+            float moveMagnitude = direccion.magnitude;
+            animator.SetFloat("ZSpeed", moveMagnitude > 0.1f ? 1f : 0f); // Fija ZSpeed a 1 si hay movimiento
+            animator.SetFloat("XSpeed", 0f); // XSpeed siempre es 0
+        }
+        else
+        {
+            // Modo "Camera Lock": Usa la dirección local para las animaciones
+            Vector3 localDirection = transform.InverseTransformDirection(direccion);
+            animator.SetFloat("ZSpeed", localDirection.z);
+            animator.SetFloat("XSpeed", localDirection.x);
+        }
+
+
         if (Input.GetKeyDown(KeyCode.Q) && cameraLock == false)
         {
             cameraLock = true;
@@ -45,7 +60,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
             direccion = transform.forward * vertical + transform.right * horizontal;
 
             transform.rotation = Quaternion.Euler(0f,Camara.eulerAngles.y,0f);
-            
+
             cc.Move(direccion * speed * Time.deltaTime);
         }
     }

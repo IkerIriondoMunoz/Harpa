@@ -18,14 +18,14 @@ public class Texts : MonoBehaviour
     private void OnTriggerEnter(Collider _collider)
     {  
         canvasInput.gameObject.SetActive(true);
-       if (Input.GetKey(KeyCode.E))
+       if (Input.GetKeyDown(KeyCode.E))
         {
             canvasInput.gameObject.SetActive(false);
             canvasText.gameObject.SetActive(true);
             _player.SetActive(false);
             _text.text = _message;
         }
-       if (Input.GetKey(KeyCode.E))
+       if (Input.GetKeyDown(KeyCode.E))
         {
             _player.SetActive(false);
             canvasInput.gameObject.SetActive(true);

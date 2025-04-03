@@ -2,6 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using System.Collections;
 
 public class YAN : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class YAN : MonoBehaviour
     public AudioSource yanAudioSource;
     public AudioClip yanClip;
     public float disableTime = 3f;
-    private float tiempoInicial = 0f;
 
     void Start()
     {
@@ -22,9 +22,9 @@ public class YAN : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            tiempoInicial += Time.deltaTime;
             canvasYan.gameObject.SetActive(true);
             canvasTextYan.text = yanText;
+            StartCoroutine(DisableCanvasAfterTime());
         }
 
         if (yanAudioSource != null && yanClip != null)
@@ -32,12 +32,15 @@ public class YAN : MonoBehaviour
             yanAudioSource.PlayOneShot(yanClip);
         }
 
-        if (tiempoInicial >= disableTime)
-        {
-            canvasYan.gameObject.SetActive(false);
-        }
-
         gameObject.SetActive(false);
     }
 
+    private IEnumerator DisableCanvasAfterTime()
+    {
+        yield return new WaitForSeconds(disableTime);
+        if (canvasYan != null)
+        {
+            canvasYan.gameObject.SetActive(false);
+        }
+    }
 }

@@ -1754,7 +1754,7 @@ MonoBehaviour:
   yanText: Hola, mi nombre es YAN y soy tu asistente en este viaje.
   yanAudioSource: {fileID: 0}
   yanClip: {fileID: 0}
-  disableTime: 3
+  disableTime: 1
 --- !u!65 &1581624329
 BoxCollider:
   m_ObjectHideFlags: 0

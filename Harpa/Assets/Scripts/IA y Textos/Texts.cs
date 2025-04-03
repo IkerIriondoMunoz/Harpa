@@ -9,33 +9,44 @@ public class Texts : MonoBehaviour
     public Text _text;
     public string _message;
     public GameObject _player;
+    private bool isPlayerInTrigger = false;
 
     void Start()
     {
         canvasText.gameObject.SetActive(false);
+        canvasInput.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider _collider)
-    {  
-        canvasInput.gameObject.SetActive(true);
-       if (Input.GetKeyDown(KeyCode.E))
+    {
+        if (_collider.CompareTag("Player"))
         {
-            canvasInput.gameObject.SetActive(false);
-            canvasText.gameObject.SetActive(true);
-            _player.SetActive(false);
-            _text.text = _message;
-        }
-       if (Input.GetKeyDown(KeyCode.E))
-        {
-            _player.SetActive(false);
             canvasInput.gameObject.SetActive(true);
-            canvasText.gameObject.SetActive(false);
+            isPlayerInTrigger = true;
         }
     }
 
     private void OnTriggerExit(Collider _collider)
     {
-        canvasText.gameObject.SetActive(false);
+        if (_collider.CompareTag("Player"))
+        {
+            canvasText.gameObject.SetActive(false);
+            canvasInput.gameObject.SetActive(false);
+            isPlayerInTrigger = false;
+        }
     }
 
+    void Update()
+    {
+        if (isPlayerInTrigger && Input.GetKeyDown(KeyCode.E))
+        {
+            bool isTextActive = canvasText.gameObject.activeSelf;
+            canvasText.gameObject.SetActive(!isTextActive);
+            canvasInput.gameObject.SetActive(isTextActive);
+            if (!isTextActive)
+            {
+                _text.text = _message;
+            }
+        }
+    }
 }

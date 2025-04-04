@@ -49,9 +49,6 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         {
             cameraLock = false;
         }
-        Debug.Log(cameraLock);
-
-        Debug.Log(direccion);
     }
 
     void CameraLockManager()

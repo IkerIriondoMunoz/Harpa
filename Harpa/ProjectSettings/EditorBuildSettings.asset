@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPersonasje.unity
     guid: 17c9407359304414c947b4c30a448f9a
   - enabled: 1
-    path: Assets/Scenes/Nivel1.unity
-    guid: aa17901ebca2db74eb0dc05b30a62069
+    path: Assets/Scenes/Nivel1_Nave.unity
+    guid: bc22a4ec42bd4b246bbcbc5b8939cb68
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

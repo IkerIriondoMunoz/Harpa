@@ -1288,7 +1288,7 @@ MonoBehaviour:
   yanText: Hola, mi nombre es YAN y soy tu asistente en este viaje.
   yanAudioSource: {fileID: 0}
   yanClip: {fileID: 0}
-  disableTime: 1
+  disableTime: 10
 --- !u!65 &1581624329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1963,6 +1963,14 @@ PrefabInstance:
     - target: {fileID: 5177319484722448333, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226339472817324102, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
+      propertyPath: near clip plane
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094487562116186135, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
+      propertyPath: CameraRadius
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

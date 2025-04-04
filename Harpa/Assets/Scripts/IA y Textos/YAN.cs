@@ -11,13 +11,11 @@ public class YAN : MonoBehaviour
     public string yanText;
     public AudioSource yanAudioSource;
     public AudioClip yanClip;
-    public float disableTime = 3f;
-
+    public float disableTime = 1f;
     void Start()
     {
         canvasYan.gameObject.SetActive(false);
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -31,8 +29,6 @@ public class YAN : MonoBehaviour
         {
             yanAudioSource.PlayOneShot(yanClip);
         }
-
-        gameObject.SetActive(false);
     }
 
     private IEnumerator DisableCanvasAfterTime()
@@ -41,6 +37,7 @@ public class YAN : MonoBehaviour
         if (canvasYan != null)
         {
             canvasYan.gameObject.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

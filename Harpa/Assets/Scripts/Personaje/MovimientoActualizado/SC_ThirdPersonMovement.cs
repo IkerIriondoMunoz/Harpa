@@ -19,8 +19,11 @@ public class SC_ThirdPersonMovement : MonoBehaviour
 
     void Update()
     {
-        MovementManager();
-        CameraLockManager();
+        if (IsMovementActive())
+        {
+            MovementManager();
+            CameraLockManager(); 
+        }
 
         if (cameraLock == false)
         {
@@ -82,5 +85,9 @@ public class SC_ThirdPersonMovement : MonoBehaviour
                 cc.Move(moveDirection.normalized * speed * Time.deltaTime);
             }
         }
+    }
+    bool IsMovementActive()
+    {
+        return !GameObject.FindWithTag("Task");
     }
 }

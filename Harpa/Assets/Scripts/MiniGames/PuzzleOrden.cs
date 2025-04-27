@@ -10,8 +10,13 @@ public class PuzzleOrden : MonoBehaviour
     public Button[] _buttons;
     private int _currentStep = 0;
 
-    public int[] correctSequence = {1, 2, 3, 4, 5, 6, 7, 8};
+    public int[] correctSequence = {0, 1, 2, 3, 4, 5, 6, 7};
     private bool _isPlayerInTrigger = false;
+    private Color _color = Color.green;
+    private Color _originalColor = new Color(164f/225f, 164f/225f, 164f/225f);
+    public GameObject _puerta;
+    private bool _isGameOpen = false;
+
 
     private void Start()
     {
@@ -22,6 +27,8 @@ public class PuzzleOrden : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _isPlayerInTrigger = true;
+        _inputCanvas.gameObject.SetActive(true);
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -33,24 +40,31 @@ public class PuzzleOrden : MonoBehaviour
 
     private void Update()
     {
-        if (_isPlayerInTrigger)
+        if (Input.GetKeyDown(KeyCode.E) && _isPlayerInTrigger)
         {
-            _inputCanvas.gameObject.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E))
+            if (_isGameOpen)
+            {
+                _inputCanvas.gameObject.SetActive(true);
+                _orderCanvas.gameObject.SetActive(false);
+                _isGameOpen = false;
+            }
+            else
             {
                 _inputCanvas.gameObject.SetActive(false);
                 _orderCanvas.gameObject.SetActive(true);
-                StarPuzzle();
+                StartPuzzle();
+                _isGameOpen = true;
             }
         }
-
     }
 
-    void StarPuzzle()
+    void StartPuzzle()
     {
         for (int i = 0; i < _buttons.Length; i++)
         {
             int index = i;
+
+            _buttons[i].onClick.RemoveAllListeners();
 
             _buttons[i].onClick.AddListener(() =>
             {
@@ -59,19 +73,34 @@ public class PuzzleOrden : MonoBehaviour
                 {
                     Debug.Log("Correcto: " + index);
                     _currentStep++;
+                    _buttons[index].image.color = _color;
+                    _color = Color.green;
 
                     if (_currentStep >= correctSequence.Length)
                     {
                         Debug.Log("¡Secuencia completada!");
                         _currentStep = 0;
+                        GameCompleted();
                     }
                 }
                 else
                 {
                     Debug.Log("Error. Reiniciando secuencia.");
                     _currentStep = 0;
+
+                    foreach (var button in _buttons)
+                    {
+                        button.image.color = _originalColor;
+                    }
                 }
             });
         }
+    }
+
+    private void GameCompleted()
+    {
+        _orderCanvas.gameObject.SetActive(false);
+        Destroy(gameObject);
+        Destroy(_puerta);
     }
 }

@@ -10,7 +10,7 @@ public class PuzzleOrden : MonoBehaviour
     public Button[] _buttons;
     private int _currentStep = 0;
 
-    public int[] correctSequence = {0, 1, 2, 3, 4, 5, 6, 7};
+    public int[] _correctSequence = {0, 1, 2, 3, 4, 5, 6, 7};
     private bool _isPlayerInTrigger = false;
     private Color _color = Color.green;
     private Color _originalColor = new Color(164f/225f, 164f/225f, 164f/225f);
@@ -69,14 +69,14 @@ public class PuzzleOrden : MonoBehaviour
             _buttons[i].onClick.AddListener(() =>
             {
 
-                if (index == correctSequence[_currentStep])
+                if (index == _correctSequence[_currentStep])
                 {
                     Debug.Log("Correcto: " + index);
                     _currentStep++;
                     _buttons[index].image.color = _color;
                     _color = Color.green;
 
-                    if (_currentStep >= correctSequence.Length)
+                    if (_currentStep >= _correctSequence.Length)
                     {
                         Debug.Log("¡Secuencia completada!");
                         _currentStep = 0;

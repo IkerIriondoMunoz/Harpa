@@ -15,6 +15,7 @@ public class ButtonTask : MonoBehaviour
     private bool _isBarFull = false;
 
     public GameObject _puerta;
+    public GameObject _nextBar;
 
     public Image _rivalBar;
     private float _rivalFillSpeed = 0.01f;
@@ -30,6 +31,7 @@ public class ButtonTask : MonoBehaviour
         _fillButton.onClick.AddListener(StartPuzzle);
         _progressBar.fillAmount = 0f;
         _rivalBar.fillAmount = 0f;
+        _nextBar.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -118,6 +120,7 @@ public class ButtonTask : MonoBehaviour
         Destroy(gameObject);
         Destroy(_puerta);
         _gameCanvas.gameObject.SetActive(false);
+        _nextBar.gameObject.SetActive(true);
     }
 }
 

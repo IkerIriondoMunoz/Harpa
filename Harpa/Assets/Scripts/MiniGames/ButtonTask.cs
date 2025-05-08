@@ -16,6 +16,8 @@ public class ButtonTask : MonoBehaviour
 
     public GameObject _puerta;
     public GameObject _nextBar;
+    public GameObject _completedLight;
+    public GameObject _uncompletedLight;
 
     public Image _rivalBar;
     private float _rivalFillSpeed = 0.01f;
@@ -26,6 +28,7 @@ public class ButtonTask : MonoBehaviour
 
     void Start()
     {
+        _completedLight.gameObject.SetActive(false);
         _gameCanvas.gameObject.SetActive(false);
         _inputCanvas.gameObject.SetActive(false);
         _fillButton.onClick.AddListener(StartPuzzle);
@@ -117,10 +120,15 @@ public class ButtonTask : MonoBehaviour
 
     void GameCompleted()
     {
-        Destroy(gameObject);
+        _completedLight.gameObject.SetActive(true);
+        _uncompletedLight.gameObject.SetActive(false);
+        this.gameObject.SetActive(false);
         Destroy(_puerta);
         _gameCanvas.gameObject.SetActive(false);
         _nextBar.gameObject.SetActive(true);
+
+
+
     }
 }
 

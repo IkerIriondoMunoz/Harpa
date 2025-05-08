@@ -13,11 +13,10 @@ public class PanelTask : MonoBehaviour
 
     private AudioSource audioSource;
 
-    public GameObject EliminarJuego; // Primer GameObject a desactivar
-    public GameObject AbrirPuerta; // Segundo GameObject a desactivar
-    public Canvas canvasMinijuego; // Referencia al Canvas del minijuego
+    public GameObject EliminarJuego; 
+    public GameObject AbrirPuerta; 
+    public Canvas canvasMinijuego;
 
-    // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
@@ -69,13 +68,12 @@ public class PanelTask : MonoBehaviour
     {
         Debug.Log("Cerrando puzzle...");
 
-        // Desactivar los dos GameObjects
         if (EliminarJuego != null)
         {
             Collider collider = EliminarJuego.GetComponent<Collider>();
             if (collider != null)
             {
-                collider.enabled = false; // Desactiva el collider
+                collider.enabled = false; 
             }
         }
 
@@ -84,7 +82,6 @@ public class PanelTask : MonoBehaviour
             AbrirPuerta.SetActive(false);
         }
 
-        // Desactivar el Canvas del minijuego
         if (canvasMinijuego != null)
         {
             canvasMinijuego.gameObject.SetActive(false);

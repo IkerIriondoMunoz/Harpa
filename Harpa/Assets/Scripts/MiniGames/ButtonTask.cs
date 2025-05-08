@@ -5,62 +5,122 @@ using UnityEngine.UI;
 
 public class ButtonTask : MonoBehaviour
 {
-    public Image progressBar; // Imagen que representa la barra de progreso
-    public Button fillButton; // Botón para llenar la barra
-    public float fillSpeed = 0.1f; // Velocidad de llenado
+    public Canvas _gameCanvas;
+    public Canvas _inputCanvas;
 
-    private bool isBarFull = false; // Bandera para evitar múltiples llamadas al método
+    public Image _progressBar;
+    public Button _fillButton;
+    private float _fillSpeed = 0.011f;
 
-    public GameObject EliminarJuego; // Primer GameObject a desactivar
-    public GameObject AbrirPuerta; // Segundo GameObject a desactivar
-    public Canvas canvasMinijuego; // Referencia al Canvas del minijuego
+    private bool _isBarFull = false;
+
+    public GameObject _puerta;
+    public GameObject _nextBar;
+
+    public Image _rivalBar;
+    private float _rivalFillSpeed = 0.01f;
+
+    private bool _isPlayerInTrigger;
+    private bool _isGameOpen;
+    private float _rivalTimer = 0f;
 
     void Start()
     {
-        fillButton.onClick.AddListener(FillProgress); // Asigna el evento al botón
-        progressBar.fillAmount = 0f; // Inicia vacía
+        _gameCanvas.gameObject.SetActive(false);
+        _inputCanvas.gameObject.SetActive(false);
+        _fillButton.onClick.AddListener(StartPuzzle);
+        _progressBar.fillAmount = 0f;
+        _rivalBar.fillAmount = 0f;
+        _nextBar.gameObject.SetActive(false);
     }
 
-    void FillProgress()
+    private void OnTriggerEnter(Collider other)
     {
-        if (progressBar.fillAmount < 1f) // Si no está llena
-        {
-            progressBar.fillAmount += fillSpeed; // Aumenta el progreso
-        }
+        _isPlayerInTrigger = true;
+        _inputCanvas.gameObject.SetActive(true);
 
-        // Verificar si la barra está llena y llamar al método
-        if (progressBar.fillAmount >= 1f && !isBarFull)
-        {
-            isBarFull = true; // Marcar como llena para evitar múltiples llamadas
-            CerrarPuzzle(); // Llamar al método cuando la barra esté llena
-        }
     }
 
-    // Método que se llama cuando la barra está llena
-    void CerrarPuzzle()
+    private void OnTriggerExit(Collider other)
     {
-        Debug.Log("Cerrando puzzle...");
+        _gameCanvas.gameObject.SetActive(false);
+        _inputCanvas.gameObject.SetActive(false);
+        _isPlayerInTrigger = false;
+    }
 
-        // Desactivar los dos GameObjects
-        if (EliminarJuego != null)
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && _isPlayerInTrigger)
         {
-            Collider collider = EliminarJuego.GetComponent<Collider>();
-            if (collider != null)
+            if (_isGameOpen)
             {
-                collider.enabled = false; // Desactiva el collider
+                _inputCanvas.gameObject.SetActive(true);
+                _gameCanvas.gameObject.SetActive(false);
+                _isGameOpen = false;
+            }
+            else
+            {
+                _inputCanvas.gameObject.SetActive(false);
+                _gameCanvas.gameObject.SetActive(true);
+                StartPuzzle();
+                _isGameOpen = true;
+                ResetPuzzle();
             }
         }
 
-        if (AbrirPuerta != null)
+        if (_isGameOpen)
         {
-            AbrirPuerta.SetActive(false);
+            UpdateRival();
+        }
+    }
+
+    void ResetPuzzle()
+    {
+        _progressBar.fillAmount = 0f;
+        _rivalBar.fillAmount = 0f;
+        _isBarFull = false;
+    }
+
+    void UpdateRival()
+    {
+        _rivalTimer += Time.deltaTime;
+        if (_rivalTimer >= 0.2f)
+        {
+            if (_rivalBar.fillAmount < 1f)
+            {
+                _rivalBar.fillAmount = _rivalBar.fillAmount + _rivalFillSpeed;
+            }
+            _rivalTimer = 0f;
         }
 
-        // Desactivar el Canvas del minijuego
-        if (canvasMinijuego != null)
+        if (_rivalBar.fillAmount >= 1f && _progressBar.fillAmount <= 1f)
         {
-            canvasMinijuego.gameObject.SetActive(false);
+            _progressBar.fillAmount = 0f;
+            _rivalBar.fillAmount = 0f;
+            Debug.Log("Sobrecalentamiento, vuelva a probar");
         }
+    }
+
+    void StartPuzzle()
+    {
+        if (_progressBar.fillAmount < 1f)
+        {
+            _progressBar.fillAmount += _fillSpeed;
+        }
+
+        if (_progressBar.fillAmount >= 1f && !_isBarFull)
+        {
+            _isBarFull = true;
+            GameCompleted();
+        }
+    }
+
+    void GameCompleted()
+    {
+        Destroy(gameObject);
+        Destroy(_puerta);
+        _gameCanvas.gameObject.SetActive(false);
+        _nextBar.gameObject.SetActive(true);
     }
 }
 

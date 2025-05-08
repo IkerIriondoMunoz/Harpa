@@ -126,9 +126,6 @@ public class ButtonTask : MonoBehaviour
         Destroy(_puerta);
         _gameCanvas.gameObject.SetActive(false);
         _nextBar.gameObject.SetActive(true);
-
-
-
     }
 }
 

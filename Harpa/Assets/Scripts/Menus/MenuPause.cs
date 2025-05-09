@@ -1,32 +1,63 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuPause : MonoBehaviour
 {
     public Canvas _canvasMenu;
-    public GameObject _player;
     private bool _menuOpen;
+    public Canvas _controlsCanvas;
+    public Canvas _settingsCanvas;
 
     void Start()
     {
         _canvasMenu.gameObject.SetActive(false);
+        _controlsCanvas.gameObject.SetActive(false);
+        _settingsCanvas.gameObject.SetActive(false);
         _menuOpen = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Q) && _menuOpen == false)
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            _canvasMenu.gameObject.SetActive(true);
-            _player.SetActive(false);
-            _menuOpen = true;
+            if (_menuOpen)
+            {
+                _canvasMenu.gameObject.SetActive(false);
+                _controlsCanvas.gameObject.SetActive(false);
+                _settingsCanvas.gameObject.SetActive(false);
+                Time.timeScale = 1f;
+                _menuOpen = false;
+            }
+            else
+            {
+                _canvasMenu.gameObject.SetActive(true);
+                Time.timeScale = 0f;
+                _menuOpen = true;
+            }
         }
+    }
 
-        if (Input.GetKeyUp(KeyCode.Q) && _menuOpen == true)
-        {
-            _canvasMenu.gameObject.SetActive(false);
-            _player.SetActive(true);
-            _menuOpen = false;
-        }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void Salir()
+    {
+        Debug.Log("Salir...");
+        Application.Quit();
+    }
+
+    public void Controles()
+    {
+        _canvasMenu.gameObject.SetActive(false);
+        _controlsCanvas.gameObject.SetActive(true);
+    }
+
+    public void Settings()
+    {
+        _canvasMenu.gameObject.SetActive(false);
+        _settingsCanvas.gameObject.SetActive(true);
     }
 }

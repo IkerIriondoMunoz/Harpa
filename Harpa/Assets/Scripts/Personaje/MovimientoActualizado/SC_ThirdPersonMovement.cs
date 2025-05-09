@@ -46,11 +46,11 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Q) && cameraLock == false)
+        if (Input.GetKeyDown(KeyCode.R) && cameraLock == false)
         {
             cameraLock = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Q) && cameraLock == true)
+        else if (Input.GetKeyDown(KeyCode.R) && cameraLock == true)
         {
             cameraLock = false;
         }

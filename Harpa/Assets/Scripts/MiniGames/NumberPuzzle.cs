@@ -133,5 +133,6 @@ public class NumberPuzzle : MonoBehaviour
         _numberText.color = color;
         yield return new WaitForSeconds(duration);
         UpdateDisplay();
+
     }
 }

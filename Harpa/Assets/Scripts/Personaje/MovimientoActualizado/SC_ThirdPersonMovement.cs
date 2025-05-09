@@ -11,6 +11,11 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     public float speed = 6f;
     private Vector3 direccion;
 
+    float gravityValue = 9.8f;
+    private float groundedTimer = 0f;
+
+    private float verticalVelocity = 9.8f;
+
 
     private bool cameraLock = false;
     public float turnSmoothTime = 0.1f;
@@ -22,7 +27,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         if (IsMovementActive())
         {
             MovementManager();
-            CameraLockManager(); 
+            CameraLockManager();
         }
 
         if (cameraLock == false)
@@ -63,6 +68,10 @@ public class SC_ThirdPersonMovement : MonoBehaviour
 
             cc.Move(direccion * speed * Time.deltaTime);
         }
+        if (cc.isGrounded && verticalVelocity < 0)
+        {
+            verticalVelocity = 0; // Si el player toca suelo, eliminamos la velocidad vertical
+        }
     }
     void MovementManager()
     {
@@ -81,6 +90,10 @@ public class SC_ThirdPersonMovement : MonoBehaviour
                 Vector3 moveDirection = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
                 cc.Move(moveDirection.normalized * speed * Time.deltaTime);
             }
+        }
+        if (cc.isGrounded && verticalVelocity < 0)
+        {
+            verticalVelocity = 0; // Si el player toca suelo, eliminamos la velocidad vertical
         }
     }
     bool IsMovementActive()

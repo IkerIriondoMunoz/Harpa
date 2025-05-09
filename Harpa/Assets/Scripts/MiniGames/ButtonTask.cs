@@ -128,4 +128,3 @@ public class ButtonTask : MonoBehaviour
         _nextBar.gameObject.SetActive(true);
     }
 }
-

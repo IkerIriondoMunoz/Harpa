@@ -21,7 +21,6 @@ public class PlayerLife : MonoBehaviour
         {
             SceneManager.LoadScene(0);
         }
-
     }
 
     public void Damage(float damage)

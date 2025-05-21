@@ -13,7 +13,6 @@ public class Bullet : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag != "Bullet" && collision.gameObject.tag != "Player" && !collided)
@@ -27,5 +26,4 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
 }

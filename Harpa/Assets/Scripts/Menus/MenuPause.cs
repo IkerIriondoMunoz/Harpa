@@ -41,6 +41,7 @@ public class MenuPause : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+        Time.timeScale = 1f;
     }
 
     public void Salir()

@@ -13,7 +13,7 @@ public class PlayerShoot : MonoBehaviour
 
     public float projectileSpeed = 30f;
     private float timeToFire;
-    public float fireRate = 4f;
+    public float fireRate = 1f;
 
     private Vector3 destination;
 
@@ -44,7 +44,7 @@ public class PlayerShoot : MonoBehaviour
 
     void spawnProjectile(Transform firePoint)
     {
-        var projectileObj = Instantiate(projectile,firePoint.position,Quaternion.identity) as GameObject;
+        var projectileObj = Instantiate(projectile,firePoint.position, Quaternion.identity) as GameObject;
         projectileObj.GetComponent<Rigidbody>().linearVelocity = (destination - firePoint.position).normalized * projectileSpeed;
     }
 }

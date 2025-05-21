@@ -16,7 +16,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     private float verticalVelocity = -9.81f;
 
 
-    private bool cameraLock = false;
+    public bool cameraLock = false;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
     // Update is called once per frame

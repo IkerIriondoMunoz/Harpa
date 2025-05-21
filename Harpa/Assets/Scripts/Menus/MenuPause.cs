@@ -9,6 +9,8 @@ public class MenuPause : MonoBehaviour
     public Canvas _controlsCanvas;
     public Canvas _settingsCanvas;
 
+    public SC_ThirdPersonMovement player;
+
     void Start()
     {
         _canvasMenu.gameObject.SetActive(false);
@@ -23,6 +25,7 @@ public class MenuPause : MonoBehaviour
         {
             if (_menuOpen)
             {
+                player.cursorLockUnlock(true);
                 _canvasMenu.gameObject.SetActive(false);
                 _controlsCanvas.gameObject.SetActive(false);
                 _settingsCanvas.gameObject.SetActive(false);
@@ -31,6 +34,7 @@ public class MenuPause : MonoBehaviour
             }
             else
             {
+                player.cursorLockUnlock(false);
                 _canvasMenu.gameObject.SetActive(true);
                 Time.timeScale = 0f;
                 _menuOpen = true;

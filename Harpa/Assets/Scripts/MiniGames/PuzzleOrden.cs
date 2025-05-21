@@ -17,6 +17,8 @@ public class PuzzleOrden : MonoBehaviour
     public GameObject _puerta;
     private bool _isGameOpen = false;
 
+    public SC_ThirdPersonMovement player;
+
 
     private void Start()
     {
@@ -28,7 +30,6 @@ public class PuzzleOrden : MonoBehaviour
     {
         _isPlayerInTrigger = true;
         _inputCanvas.gameObject.SetActive(true);
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -41,12 +42,14 @@ public class PuzzleOrden : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && _isPlayerInTrigger)
-        {
+        {            
             if (_isGameOpen)
             {
                 _inputCanvas.gameObject.SetActive(true);
                 _orderCanvas.gameObject.SetActive(false);
                 _isGameOpen = false;
+
+                player.cursorLockUnlock(true);
             }
             else
             {
@@ -54,6 +57,9 @@ public class PuzzleOrden : MonoBehaviour
                 _orderCanvas.gameObject.SetActive(true);
                 StartPuzzle();
                 _isGameOpen = true;
+
+                player.cursorLockUnlock(false);
+
             }
         }
     }
@@ -102,5 +108,8 @@ public class PuzzleOrden : MonoBehaviour
         _orderCanvas.gameObject.SetActive(false);
         Destroy(gameObject);
         Destroy(_puerta);
+
+        player.cursorLockUnlock(true);
+
     }
 }

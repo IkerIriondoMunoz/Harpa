@@ -13,6 +13,8 @@ public class NumberPuzzle : MonoBehaviour
     public Text _numberText;
     public GameObject _puerta;
 
+    public SC_ThirdPersonMovement player;
+
     public int[] _correctSequence = { 1, 2, 0, 6 };
 
     private List<int> _currentInput = new List<int>();
@@ -57,6 +59,8 @@ public class NumberPuzzle : MonoBehaviour
                 _inputCanvas.gameObject.SetActive(true);
                 _numberCanvas.gameObject.SetActive(false);
                 _isGameOpen = false;
+
+                player.cursorLockUnlock(true);
             }
             else
             {
@@ -64,6 +68,8 @@ public class NumberPuzzle : MonoBehaviour
                 _numberCanvas.gameObject.SetActive(true);
                 StartPuzzle();
                 _isGameOpen = true;
+
+                player.cursorLockUnlock(false);
             }
         }
     }
@@ -125,6 +131,8 @@ public class NumberPuzzle : MonoBehaviour
         _numberCanvas.gameObject.SetActive(false);
         Destroy(gameObject);
         Destroy(_puerta);
+
+        player.cursorLockUnlock(true);
     }
 
     private IEnumerator ShowMessage(string message, Color color, float duration)

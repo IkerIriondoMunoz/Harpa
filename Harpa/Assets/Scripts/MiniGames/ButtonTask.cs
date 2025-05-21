@@ -19,6 +19,8 @@ public class ButtonTask : MonoBehaviour
     public GameObject _completedLight;
     public GameObject _uncompletedLight;
 
+    public SC_ThirdPersonMovement player;
+
     public Image _rivalBar;
     private float _rivalFillSpeed = 0.01f;
 
@@ -41,7 +43,6 @@ public class ButtonTask : MonoBehaviour
     {
         _isPlayerInTrigger = true;
         _inputCanvas.gameObject.SetActive(true);
-
     }
 
     private void OnTriggerExit(Collider other)
@@ -60,6 +61,10 @@ public class ButtonTask : MonoBehaviour
                 _inputCanvas.gameObject.SetActive(true);
                 _gameCanvas.gameObject.SetActive(false);
                 _isGameOpen = false;
+
+                _inputCanvas.gameObject.SetActive(true);
+
+                player.cursorLockUnlock(true);
             }
             else
             {
@@ -68,6 +73,10 @@ public class ButtonTask : MonoBehaviour
                 StartPuzzle();
                 _isGameOpen = true;
                 ResetPuzzle();
+
+                _inputCanvas.gameObject.SetActive(false);
+
+                player.cursorLockUnlock(false);
             }
         }
 
@@ -120,11 +129,17 @@ public class ButtonTask : MonoBehaviour
 
     void GameCompleted()
     {
+        player.cursorLockUnlock(true);
+
         _completedLight.gameObject.SetActive(true);
         _uncompletedLight.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
         Destroy(_puerta);
         _gameCanvas.gameObject.SetActive(false);
         _nextBar.gameObject.SetActive(true);
+
+        _inputCanvas.gameObject.SetActive(true);
+
+        
     }
 }

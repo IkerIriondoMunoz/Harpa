@@ -13553,6 +13553,18 @@ MonoBehaviour:
   _canvasMenu: {fileID: 155036499}
   _controlsCanvas: {fileID: 1889114889}
   _settingsCanvas: {fileID: 1707503745}
+  player: {fileID: 0}
+--- !u!114 &750707224 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3800632061824476783, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
+  m_PrefabInstance: {fileID: 1098207453}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750707215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccf263280246cd4ba524078a2706569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &754671077
 GameObject:
   m_ObjectHideFlags: 0
@@ -17256,6 +17268,7 @@ MonoBehaviour:
   _nextBar: {fileID: 0}
   _completedLight: {fileID: 1707748586}
   _uncompletedLight: {fileID: 396685457}
+  player: {fileID: 750707224}
   _rivalBar: {fileID: 296337731}
 --- !u!65 &985092708
 BoxCollider:
@@ -18849,7 +18862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5177319484722448333, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.684
+      value: 30.69
       objectReference: {fileID: 0}
     - target: {fileID: 5177319484722448333, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18857,7 +18870,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5177319484722448333, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.848
+      value: 6.05
       objectReference: {fileID: 0}
     - target: {fileID: 5177319484722448333, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18889,15 +18902,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7720303647323602447, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5749786
+      value: 0.6256294
       objectReference: {fileID: 0}
     - target: {fileID: 7720303647323602447, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.042168736
+      value: -0.14739358
       objectReference: {fileID: 0}
     - target: {fileID: 7720303647323602447, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.1175728
+      value: -1.3344724
       objectReference: {fileID: 0}
     - target: {fileID: 7720303647323602447, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -26531,6 +26544,7 @@ MonoBehaviour:
   _submitButton: {fileID: 497656173}
   _numberText: {fileID: 1242894860}
   _puerta: {fileID: 827807607}
+  player: {fileID: 750707224}
   _correctSequence: 01000000020000000000000006000000
 --- !u!65 &1581962541
 BoxCollider:
@@ -26725,6 +26739,7 @@ MonoBehaviour:
   _nextBar: {fileID: 1986634972}
   _completedLight: {fileID: 769608132}
   _uncompletedLight: {fileID: 327659454}
+  player: {fileID: 750707224}
   _rivalBar: {fileID: 296337731}
 --- !u!65 &1596567551
 BoxCollider:
@@ -28086,6 +28101,7 @@ MonoBehaviour:
   - {fileID: 1473860183}
   _correctSequence: 0300000006000000020000000700000004000000050000000000000001000000
   _puerta: {fileID: 1161665347}
+  player: {fileID: 750707224}
 --- !u!65 &1698707146
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32818,6 +32834,7 @@ MonoBehaviour:
   _nextBar: {fileID: 985092705}
   _completedLight: {fileID: 678609544}
   _uncompletedLight: {fileID: 476778643}
+  player: {fileID: 750707224}
   _rivalBar: {fileID: 296337731}
 --- !u!65 &1986634975
 BoxCollider:

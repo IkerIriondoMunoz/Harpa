@@ -22,8 +22,13 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     float turnSmoothVelocity;
     // Update is called once per frame
 
-    void Update()
+    private void Start()
     {
+        cursorLockUnlock(true);
+    }
+    void Update()
+    { 
+
         if (IsMovementActive())
         {
             MovementManager();
@@ -99,5 +104,19 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     bool IsMovementActive()
     {
         return !GameObject.FindWithTag("Task");
+    }
+
+    public void cursorLockUnlock(bool locked)
+    {
+        if (locked == true)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+        else
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
     }
 }

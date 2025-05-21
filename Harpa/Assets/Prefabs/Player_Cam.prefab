@@ -491,7 +491,7 @@ Transform:
   m_GameObject: {fileID: 1980959974639922721}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.314, y: 1, z: 0}
+  m_LocalPosition: {x: 0.4, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1349,7 +1349,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4597713149828722147}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.21744579, y: -0.11167896, z: -0.025052262, w: 0.9693387}
+  m_LocalRotation: {x: -0.21970415, y: -0.09010376, z: -0.020383565, w: 0.97118276}
   m_LocalPosition: {x: 0.74722433, y: -0.4, z: -1.85517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1414,7 +1414,7 @@ MonoBehaviour:
   TargetOffset: {x: 0, y: 0, z: 0}
   TrackerSettings:
     BindingMode: 4
-    PositionDamping: {x: 1, y: 1, z: 1}
+    PositionDamping: {x: 0.1, y: 0.1, z: 0.1}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1

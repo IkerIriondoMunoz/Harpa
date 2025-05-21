@@ -23,14 +23,14 @@ public class PlayerLife : MonoBehaviour
         }
     }
 
-    public void Damage(float damage)
+    public void Damage(float damageRecived)
     {
-        _currentLife -= damage;
+        _currentLife -= damageRecived;
     }
 
-    public void Health(float health)
+    public void Heal(float healAmount)
     {
-        _currentLife += health;
+        _currentLife += healAmount;
 
         if (_currentLife > _maxLife)
         {

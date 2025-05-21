@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Task
+  - Enemy
   - Bullet
   layers:
   - Default

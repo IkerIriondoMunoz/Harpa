@@ -25,12 +25,12 @@ public class MenuPause : MonoBehaviour
         {
             if (_menuOpen)
             {
-                player.cursorLockUnlock(true);
                 _canvasMenu.gameObject.SetActive(false);
                 _controlsCanvas.gameObject.SetActive(false);
                 _settingsCanvas.gameObject.SetActive(false);
                 Time.timeScale = 1f;
                 _menuOpen = false;
+                player.cursorLockUnlock(true);
             }
             else
             {

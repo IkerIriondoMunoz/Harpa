@@ -37,6 +37,7 @@ public class PuzzleOrden : MonoBehaviour
         _orderCanvas.gameObject.SetActive(false);
         _inputCanvas.gameObject.SetActive(false);
         _isPlayerInTrigger = false;
+        player.cursorLockUnlock(true);
     }
 
     private void Update()

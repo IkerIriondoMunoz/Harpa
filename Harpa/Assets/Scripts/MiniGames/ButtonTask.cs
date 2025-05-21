@@ -10,7 +10,7 @@ public class ButtonTask : MonoBehaviour
 
     public Image _progressBar;
     public Button _fillButton;
-    private float _fillSpeed = 0.011f;
+    public float _fillSpeed = 0.011f;
 
     private bool _isBarFull = false;
 
@@ -22,7 +22,7 @@ public class ButtonTask : MonoBehaviour
     public SC_ThirdPersonMovement player;
 
     public Image _rivalBar;
-    private float _rivalFillSpeed = 0.01f;
+    public float _rivalFillSpeed = 0.01f;
 
     private bool _isPlayerInTrigger;
     private bool _isGameOpen;
@@ -50,6 +50,7 @@ public class ButtonTask : MonoBehaviour
         _gameCanvas.gameObject.SetActive(false);
         _inputCanvas.gameObject.SetActive(false);
         _isPlayerInTrigger = false;
+        player.cursorLockUnlock(true);
     }
 
     private void Update()

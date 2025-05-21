@@ -1,14 +1,16 @@
+using Unity.Cinemachine;
 using Unity.Mathematics;
 using UnityEngine;
 
 public class SC_ThirdPersonMovement : MonoBehaviour
 {
     public CharacterController cc;
-    public Transform Camara;
+    public Transform cameraPosition;
     public Animator animator;
+    public CinemachineCamera cameraPlayer;
 
 
-    public float speed = 6f;
+    public float speed = 4f;
     private Vector3 direccion;
 
     float gravityValue = 9.8f;
@@ -51,13 +53,17 @@ public class SC_ThirdPersonMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.R) && cameraLock == false)
+        if (Input.GetKeyDown(KeyCode.Mouse1) && cameraLock == false)
         {
             cameraLock = true;
+            animator.SetBool("isAiming",true);
+            cameraPlayer.Lens.FieldOfView = 20f;
         }
-        else if (Input.GetKeyDown(KeyCode.R) && cameraLock == true)
+        else if (Input.GetKeyUp(KeyCode.Mouse1) && cameraLock == true)
         {
             cameraLock = false;
+            animator.SetBool("isAiming", false);
+            cameraPlayer.Lens.FieldOfView = 60f;
         }
     }
 
@@ -69,7 +75,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
             float vertical = Input.GetAxisRaw("Vertical");
             direccion = transform.forward * vertical + transform.right * horizontal;
 
-            transform.rotation = Quaternion.Euler(0f,Camara.eulerAngles.y,0f);
+            transform.rotation = Quaternion.Euler(0f,cameraPosition.eulerAngles.y,0f);
 
             cc.Move(direccion * speed * Time.deltaTime);
         }
@@ -88,7 +94,7 @@ public class SC_ThirdPersonMovement : MonoBehaviour
 
             if (direccion.magnitude > 0.1f)
             {
-                float targetAngle = Mathf.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + Camara.eulerAngles.y;
+                float targetAngle = Mathf.Atan2(direccion.x, direccion.z) * Mathf.Rad2Deg + cameraPosition.eulerAngles.y;
                 float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
                 transform.rotation = Quaternion.Euler(0f, angle, 0f);
 

@@ -28,7 +28,7 @@ EditorBuildSettings:
     guid: 7034d08e9dd58814199c5a65f7a1cf52
   - enabled: 1
     path: Assets/Scenes/Padre/Nivel2_Harpa_Padre.unity
-    guid: 22ddf94b41ac80e44bd7d4317b0fd8c5
+    guid: 7c7ff12e3e5a6ca4ca5d569d89397848
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

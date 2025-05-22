@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Padre/CinematicaIntermedia2Padre.unity
     guid: 95f21df81dea7b5489fd16048f9bd8c1
+  - enabled: 1
+    path: Assets/Scenes/Hijo/CinematicaFinalHijo.unity
+    guid: f6be75ff949ea2e4a935c033aa44b2fd
+  - enabled: 1
+    path: Assets/Scenes/Padre/CinematicaFinalPadre.unity
+    guid: 52724025d22f4f948bb751a0e19d4899
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -7,6 +7,12 @@ public class MenuInicial : MonoBehaviour
     public Canvas _canvasMenu;
     public int _nextScene;
 
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
     public void Jugar()
     {
         SceneManager.LoadScene(_nextScene);

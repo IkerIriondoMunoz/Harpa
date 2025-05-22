@@ -12,7 +12,7 @@ public class EnemiesMovement : MonoBehaviour
     private int _actualPoint = 0;
     private bool _patrol;
 
-    public float _detectionRadius = 10f;
+    public float _detectionRadius = 20f;
     public float _detectionAngle = 90f;
 
     public Transform _player;

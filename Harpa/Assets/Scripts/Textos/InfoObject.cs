@@ -19,17 +19,22 @@ public class InfoObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _isPlayerInTrigger = true;
-        _inputCanvas.gameObject.SetActive(true);
-
-        _infoText.text = _infoTextContent;
+        if (other.CompareTag("Player"))
+        {
+            _isPlayerInTrigger = true;
+            _inputCanvas.gameObject.SetActive(true);
+            _infoText.text = _infoTextContent;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _textCanvas.gameObject.SetActive(false);
-        _inputCanvas.gameObject.SetActive(false);
-        _isPlayerInTrigger = false;
+        if (other.CompareTag("Player"))
+        {
+            _textCanvas.gameObject.SetActive(false);
+            _inputCanvas.gameObject.SetActive(false);
+            _isPlayerInTrigger = false;
+        }
     }
 
     void Update()

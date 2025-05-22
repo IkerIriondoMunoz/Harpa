@@ -41,16 +41,22 @@ public class ButtonTask : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _isPlayerInTrigger = true;
-        _inputCanvas.gameObject.SetActive(true);
+        if (other.CompareTag("Player"))
+        {
+            _isPlayerInTrigger = true;
+            _inputCanvas.gameObject.SetActive(true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        _gameCanvas.gameObject.SetActive(false);
-        _inputCanvas.gameObject.SetActive(false);
-        _isPlayerInTrigger = false;
-        player.cursorLockUnlock(true);
+        if (other.CompareTag("Player"))
+        {
+            _gameCanvas.gameObject.SetActive(false);
+            _inputCanvas.gameObject.SetActive(false);
+            _isPlayerInTrigger = false;
+            player.cursorLockUnlock(true);
+        }
     }
 
     private void Update()

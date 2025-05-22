@@ -26,12 +26,16 @@ public class EnemiesMovement : MonoBehaviour
     private float _damageTriggerTimer = 0f;
     private bool _isAttacking = false;
 
+    public Animator _animator;
+
     void Start()
     {
         if (_routePoints.Length > 0)
         {
             _agent.SetDestination(_routePoints[_actualPoint].transform.position);
         }
+
+        _animator.SetFloat("Speed", _currentSpeed);
 
         _currentSpeed = _speed;
         _agent.speed = _currentSpeed;

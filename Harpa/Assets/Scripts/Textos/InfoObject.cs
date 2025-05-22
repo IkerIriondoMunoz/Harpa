@@ -10,6 +10,7 @@ public class InfoObject : MonoBehaviour
     public string _infoTextContent;
     private bool _isPlayerInTrigger;
     private bool _isCanvasOpen;
+
     void Start()
     {
         _textCanvas.gameObject.SetActive(false);

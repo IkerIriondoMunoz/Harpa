@@ -17,6 +17,8 @@ public class PlayerShoot : MonoBehaviour
 
     private Vector3 destination;
 
+    public AudioSource audioSource;
+
     void Update()
     {
         if (Input.GetKey(KeyCode.Mouse0) && Time.time >= timeToFire && Player.cameraLock == true)
@@ -46,5 +48,6 @@ public class PlayerShoot : MonoBehaviour
     {
         var projectileObj = Instantiate(projectile,firePoint.position, Quaternion.identity) as GameObject;
         projectileObj.GetComponent<Rigidbody>().linearVelocity = (destination - firePoint.position).normalized * projectileSpeed;
+        audioSource.Play();
     }
 }

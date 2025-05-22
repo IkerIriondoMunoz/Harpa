@@ -27,6 +27,7 @@ public class ButtonTask : MonoBehaviour
     private bool _isPlayerInTrigger;
     private bool _isGameOpen;
     private float _rivalTimer = 0f;
+    public AudioSource _audioSource;
 
     void Start()
     {
@@ -147,6 +148,6 @@ public class ButtonTask : MonoBehaviour
 
         _inputCanvas.gameObject.SetActive(true);
 
-        
+        _audioSource.Play();
     }
 }

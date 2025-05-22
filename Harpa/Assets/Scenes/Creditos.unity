@@ -456,8 +456,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -410.51108, y: 6.3715}
-  m_SizeDelta: {x: 911.6765, y: 1202.1094}
+  m_AnchoredPosition: {x: -410.51108, y: -458}
+  m_SizeDelta: {x: 911.6765, y: 2084.518}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717448844
 MonoBehaviour:
@@ -492,7 +492,23 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: hola buenas aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  m_Text: "\n\n\n\n\nDesarrollado por:\r\nSerafino Murgia\r\nIker Iriondo\r\n\xC1lvaro
+    Ram\xEDrez\r\n\r\nDise\xF1o y direcci\xF3n\r\nDirecci\xF3n creativa Iker Iriondo,
+    Alvaro Ramirez y Serafino Murgia\r\n\r\nDise\xF1o de niveles y mec\xE1nicas Alvaro
+    Ramirez e Iker Iriondo\r\n\r\nDise\xF1o de puzles e interacciones Serafino Murgia,
+    Iker Iriondo y Alvaro Ramirez\r\n\r\nProgramaci\xF3n\r\nL\xF3gica de IA y enemigos
+    Iker Iriondo y Alvaro Ramirez\r\n\r\nMec\xE1nicas de combate y curaci\xF3n Iker
+    Iriondo y Alvaro Ramirez\r\n\r\nControl del jugador y movimiento Iker Iriondo
+    y Alvaro Ramirez\r\n\r\nArte y animaci\xF3n\r\nAnimaci\xF3n de personajes y enemigos
+    Iker Iriondo, Serafino Murgia y Alvaro Ramirez\r\n\r\nImplementaci\xF3n de Blend
+    Trees y transiciones Iker Iriondo y Serafino Murgia\r\n\r\nIntegraci\xF3n de
+    animaciones desde Mixamo Serafino Murgia y Alvaro Ramirez\r\n\r\nIluminaci\xF3n
+    y ambientaci\xF3n de la escena Iker Iriondo\r\n\r\nDise\xF1o de objetos/enemigos/entorno
+    Serafino Murgia\r\n\r\nSonido y efectos\r\nSistema de sonido din\xE1mico seg\xFAn
+    movimiento Serafino Murgia y Alvaro Ramirez\r\n\r\nEfectos de ataque, da\xF1o
+    y entorno Iker Iriondo y Alvaro Ramirez\r\n\r\nAgradecimientos especiales\r\n\r\nUnity
+    Engine\r\n\r\nMixamo\r\n\r\nAssets gratuitos de la comunidad\r\n\r\nGracias por
+    jugar. \xA1Nos vemos en la pr\xF3xima aventura!"
 --- !u!222 &717448845
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -513,7 +529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f310bcbee580b44afa305aaff2d86a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scrollSpeed: 30
+  scrollSpeed: 20
   resetDelay: 1
   _nextScene: 0
 --- !u!1 &998695506

@@ -11,6 +11,8 @@ public class MenuPause : MonoBehaviour
 
     public SC_ThirdPersonMovement player;
 
+    public int _nextScene;
+
     void Start()
     {
         _canvasMenu.gameObject.SetActive(false);
@@ -44,7 +46,7 @@ public class MenuPause : MonoBehaviour
 
     public void MainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(_nextScene);
         Time.timeScale = 1f;
     }
 

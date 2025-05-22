@@ -1116,7 +1116,7 @@ PrefabInstance:
       addedObject: {fileID: 631640852}
     - targetCorrespondingSourceObject: {fileID: 130254, guid: 562f0bb8ba91fe844baf976e5806516d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 631640851}
+      addedObject: {fileID: 631640853}
   m_SourcePrefab: {fileID: 100100000, guid: 562f0bb8ba91fe844baf976e5806516d, type: 3}
 --- !u!1 &75988160 stripped
 GameObject:
@@ -9294,21 +9294,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 413772, guid: 562f0bb8ba91fe844baf976e5806516d, type: 3}
   m_PrefabInstance: {fileID: 73930708}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &631640851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631640849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86b969122ff444244b0d2df700e13b66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvasInput: {fileID: 549797365}
-  _text: {fileID: 1405867188}
-  _player: {fileID: 750707215}
 --- !u!65 &631640852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9330,6 +9315,22 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 6, y: 4, z: 6}
   m_Center: {x: 0, y: 1.215452, z: 0.038960584}
+--- !u!114 &631640853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631640849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c7f3c1a8179be48955e3b158cc8d56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvasInput: {fileID: 549797365}
+  _text: {fileID: 0}
+  _player: {fileID: 1251889877}
+  _nextScene: 3
 --- !u!1001 &632098558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16411,7 +16412,8 @@ PrefabInstance:
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
       value: i need to enter the captain code in order to reach the machines room
-        to put on the engine and start my journey to "HARPA"
+        to put on the engine and start my journey to "HARPA", i think my father used
+        an special date.
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -18918,6 +18920,11 @@ Transform:
   - {fileID: 1138840134}
   m_Father: {fileID: 1017756363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1251889877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3121460258968278817, guid: 971508a02db46e14490c9aa0f8178bd5, type: 3}
+  m_PrefabInstance: {fileID: 1098207453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1252625356
 PrefabInstance:
   m_ObjectHideFlags: 0

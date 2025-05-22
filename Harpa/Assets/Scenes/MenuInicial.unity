@@ -1815,6 +1815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controlsCanvas: {fileID: 1108043194}
   _canvasMenu: {fileID: 1573453680}
+  _nextScene: 1
 --- !u!1 &1089489471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2144,6 +2145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _controlsCanvas: {fileID: 0}
   _canvasMenu: {fileID: 0}
+  _nextScene: 0
 --- !u!114 &1336778069
 MonoBehaviour:
   m_ObjectHideFlags: 0

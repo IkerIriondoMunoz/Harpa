@@ -5,10 +5,11 @@ public class MenuInicial : MonoBehaviour
 {
     public Canvas _controlsCanvas;
     public Canvas _canvasMenu;
+    public int _nextScene;
 
     public void Jugar()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(_nextScene);
     }
 
     public void Salir()

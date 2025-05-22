@@ -7,6 +7,7 @@ public class PlayerLife : MonoBehaviour
     public Image _lifeBar;
     public float _maxLife = 100f;
     public float _currentLife = 100f;
+    public int _nextScene;
 
     void Start()
     {
@@ -19,7 +20,7 @@ public class PlayerLife : MonoBehaviour
 
         if(_currentLife <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(_nextScene);
         }
     }
 

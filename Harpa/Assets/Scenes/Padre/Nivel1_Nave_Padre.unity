@@ -663,12 +663,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
-      value: '4/5                                                                   
-        Ever since the last planet in our galaxy was discovered, my father has been...
-        absent. He seems to have lost his will to live; exploring the galaxy was
-        more than a job to him; it was his dream, the driving force that kept him
-        going. i miss the old days when my father would take me on his expeditions
-        to unknown worlds. it''s been years since he left in search of "HARPA" '
+      value: '4/5                                                                  
+        it''s been a long time since i left the earth, my son would have grown a
+        lot.  '
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -2572,7 +2569,7 @@ PrefabInstance:
     - target: {fileID: 1366297894368303382, guid: 8c9ff27c4343b5e41b0c944eb72ca800, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 4203580445974611974, guid: 8c9ff27c4343b5e41b0c944eb72ca800, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2580,11 +2577,11 @@ PrefabInstance:
     - target: {fileID: 6154245364772519299, guid: 8c9ff27c4343b5e41b0c944eb72ca800, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 7634508540901928974, guid: 8c9ff27c4343b5e41b0c944eb72ca800, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 3441f6441092d3c459a48c3c48ea63c6, type: 2}
+      objectReference: {fileID: 2100000, guid: 11ed21415b661da499e94e4e9e5c47f4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8763,19 +8760,19 @@ PrefabInstance:
     - target: {fileID: -1157794553445019647, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: -709108270984527889, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: -300221722830579772, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 291681716129034608, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: m_Name
       value: (Msh)Sofa
@@ -8783,7 +8780,7 @@ PrefabInstance:
     - target: {fileID: 2498391195656329450, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 6028541643216751578, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.256
@@ -8807,7 +8804,7 @@ PrefabInstance:
     - target: {fileID: 8103066730314626748, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 9106448265423436693, guid: 7c11c43002c7a274894af728c82a6df8, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -8941,7 +8938,7 @@ PrefabInstance:
     - target: {fileID: -8480881075074141737, guid: 9dc13b22478e61841902a67cca9eef2d, type: 3}
       propertyPath: 'm_Materials.Array.data[2]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: -8480881075074141737, guid: 9dc13b22478e61841902a67cca9eef2d, type: 3}
       propertyPath: 'm_Materials.Array.data[3]'
       value: 
@@ -9309,6 +9306,7 @@ MonoBehaviour:
   canvasInput: {fileID: 549797365}
   _text: {fileID: 1405867188}
   _player: {fileID: 2439901519287253721}
+  _nextScene: 6
 --- !u!65 &631640852
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16361,8 +16359,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
-      value: i need to enter the captain code in order to reach the machines room
-        to put on the engine and start my journey to "HARPA"
+      value: 'i need to enter the captain code in order to reach the machines room
+        to turn on the engine and start my journey to "HARPA", didn''t i used an
+        special date? '
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -20132,8 +20131,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
-      value: i've finally reached my office, that photo of my father and i gives
-        me so many good memories, i miss the old times
+      value: i've finally reached my office, that photo of my son and i gives me
+        so many good memories, i miss the old times
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -28008,11 +28007,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
-      value: '20/7                                                                   
-        For so many years i wished for him to come back, everyone told me that he
-        died, that he would never return. But i refuse to belive it, my father is
-        out there, somwhere, maybe in "HARPA", i''ve been looking at his old notes,
-        it seems these symbols are the key to get to "HARPA". i will find my father. '
+      value: 20/7                                                                               
+        i've found some strange symbols on an abandoned planet of an old civilitation
+        who seemed to reach Harpa many years ago, i think this could be the key to
+        locate the planet.
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -30791,7 +30789,7 @@ PrefabInstance:
     - target: {fileID: -8290595368115205706, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: -8290595368115205706, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30823,7 +30821,7 @@ PrefabInstance:
     - target: {fileID: -1038768950960968954, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: -1038768950960968954, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30835,7 +30833,7 @@ PrefabInstance:
     - target: {fileID: 925253531142859755, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 925253531142859755, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30843,7 +30841,7 @@ PrefabInstance:
     - target: {fileID: 966048656819740196, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 966048656819740196, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30851,7 +30849,7 @@ PrefabInstance:
     - target: {fileID: 2004378086545268952, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 2004378086545268952, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30859,7 +30857,7 @@ PrefabInstance:
     - target: {fileID: 3255705835380182079, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 3255705835380182079, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30867,7 +30865,7 @@ PrefabInstance:
     - target: {fileID: 4263333397113782206, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 4263333397113782206, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30875,7 +30873,7 @@ PrefabInstance:
     - target: {fileID: 7673304299725068582, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 7673304299725068582, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 
@@ -30883,7 +30881,7 @@ PrefabInstance:
     - target: {fileID: 8531785786431785063, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 25f4df78bf8cd2a439559427be97723c, type: 2}
+      objectReference: {fileID: 2100000, guid: e03c61940200c9b428ea54b9134ba0a7, type: 2}
     - target: {fileID: 8531785786431785063, guid: 49c0e5468435e4f4c947e2e2d0c5c6cf, type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
       value: 

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Reactor : MonoBehaviour
+public class ReactorHijo : MonoBehaviour
 {
     public Canvas canvasInput;
     public Text _text;
@@ -42,4 +42,3 @@ public class Reactor : MonoBehaviour
         }
     }
 }
-

@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -80,7 +80,97 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: EnemigoAc(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cube
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.013125962, y: -0.74817973, z: 0.00000010052457}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Light
+      parentName: EnemigoAc(Clone)
+      position: {x: -4.0762453, y: 5.903862, z: -1.005454}
+      rotation: {x: 0.52327543, y: -0.34203392, z: 0.72694236, w: 0.28416622}
+      scale: {x: 100.00001, y: 100, z: 100}
+    - name: Camera
+      parentName: EnemigoAc(Clone)
+      position: {x: -7.3588915, y: 4.958309, z: 6.925791}
+      rotation: {x: 0.09062847, y: 0.89379627, z: -0.20997298, w: 0.3857799}
+      scale: {x: 100, y: 100.00001, z: 99.99999}
+    - name: Empty
+      parentName: EnemigoAc(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 6.211317e-15, y: 1, z: -0.00000008146034, w: 0.0000000754979}
+      scale: {x: 127.41373, y: 127.41373, z: 127.41373}
+    - name: Sphere
+      parentName: EnemigoAc(Clone)
+      position: {x: -2.4505353, y: 0.10198795, z: -1.0306058}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: -26.204166, y: -22.666931, z: -22.666931}
+    - name: Sphere.001
+      parentName: EnemigoAc(Clone)
+      position: {x: -1.6154313, y: 0.10000025, z: -1.001721}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: -26.204166, y: -22.666931, z: -22.666931}
+    - name: Cylinder
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.40694883, y: 0.019824874, z: -0.61066407}
+      rotation: {x: -0.017795885, y: 0.015478078, z: -0.68135303, w: 0.7315749}
+      scale: {x: 9.270329, y: 9.169915, z: 49.035927}
+    - name: Cylinder.001
+      parentName: EnemigoAc(Clone)
+      position: {x: 0.28546774, y: 0.011245732, z: -0.6404661}
+      rotation: {x: -0.017795885, y: 0.015478078, z: -0.68135303, w: 0.7315749}
+      scale: {x: 9.270329, y: 9.169915, z: 49.035927}
+    - name: Sphere.002
+      parentName: EnemigoAc(Clone)
+      position: {x: -2.0191247, y: -1.1524225, z: -1.1186278}
+      rotation: {x: 0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: -26.204166, y: -22.666931, z: -22.666931}
+    - name: Cone
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.37464294, y: 1.4846072, z: -0.07564059}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 8.572097, y: 9.353051, z: 19.633904}
+    - name: Cone.001
+      parentName: EnemigoAc(Clone)
+      position: {x: 0.30837968, y: 1.4846072, z: -0.07564059}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 8.572097, y: 9.353051, z: 19.633904}
+    - name: Cone.002
+      parentName: EnemigoAc(Clone)
+      position: {x: 0.5193173, y: 1.181424, z: -0.05101593}
+      rotation: {x: -0.5941286, y: 0.38819003, z: -0.3977676, w: 0.58146423}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
+    - name: Cone.003
+      parentName: EnemigoAc(Clone)
+      position: {x: 0.6070794, y: 1.0571531, z: -0.048666157}
+      rotation: {x: -0.5941286, y: 0.38819003, z: -0.3977676, w: 0.58146423}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
+    - name: Cone.004
+      parentName: EnemigoAc(Clone)
+      position: {x: 0.68018365, y: 0.92838407, z: -0.0515013}
+      rotation: {x: -0.5941286, y: 0.38819003, z: -0.3977676, w: 0.58146423}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
+    - name: Cone.005
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.5736388, y: 1.1402367, z: -0.06813361}
+      rotation: {x: -0.59262264, y: -0.40263924, z: 0.20130797, w: 0.6679485}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
+    - name: Cone.006
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.6797491, y: 1.0405285, z: -0.05926695}
+      rotation: {x: -0.59262264, y: -0.40263924, z: 0.20130797, w: 0.6679485}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
+    - name: Cone.007
+      parentName: EnemigoAc(Clone)
+      position: {x: -0.7360942, y: 0.9268615, z: -0.056524713}
+      rotation: {x: -0.59262264, y: -0.40263924, z: 0.20130797, w: 0.6679485}
+      scale: {x: 5.1460924, y: 5.614924, z: 11.786836}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -91,7 +181,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1

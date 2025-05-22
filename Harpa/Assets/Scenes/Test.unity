@@ -2181,6 +2181,7 @@ MonoBehaviour:
   _atackCooldown: 0
   _damageTrigger: {fileID: 0}
   _damageTriggerDuration: 0.3
+  _animator: {fileID: 0}
 --- !u!195 &1030539961
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -3614,6 +3615,7 @@ MonoBehaviour:
   _controlsCanvas: {fileID: 0}
   _settingsCanvas: {fileID: 0}
   player: {fileID: 0}
+  _nextScene: 0
 --- !u!1 &1555361898
 GameObject:
   m_ObjectHideFlags: 0

@@ -803,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0019989014, y: -490.731}
-  m_SizeDelta: {x: 1920, y: 98.543}
+  m_AnchoredPosition: {x: 0.0019989014, y: -3.626}
+  m_SizeDelta: {x: 1920, y: 917.397}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &656987383
 MonoBehaviour:
@@ -839,7 +839,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter Text
+  m_Text: "At the top of the hill I saw my father, he rose into the air and spoke
+    to me, he told me that \"HARPA\" had joined him to the universe, that now he
+    could fulfill his dream of exploring other galaxies.\r\n\r\nAs far as I'm concerned,
+    I will spend some time looking for a new goal in life, my father told me that
+    whatever i did, whatever I dreamed, \"HARPA\" would help me make it a reality.\r\n\r\nI
+    have been waiting 15 years to see my father, and he has left again, but now i
+    am not sad, i am... Inspired, i just have to find my path, and follow it to the
+    end.\n\n\"Whenever you find yourself doubting how far you can go, just remember
+    how far you have come\" \n\nNorman D'Argos"
 --- !u!222 &656987384
 CanvasRenderer:
   m_ObjectHideFlags: 0

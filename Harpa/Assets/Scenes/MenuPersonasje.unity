@@ -224,7 +224,8 @@ MonoBehaviour:
     D'Argos, Fernando is born and raised with everything anyone could want. \n\nAt
     15, his father went on an expedition from which he would never return. \n\nFernando
     filled Norman's head with dreams and ambitions, each and every one of which featured
-    the planet \"Harpa.\"\n\n Norman's goal is to find \"Harpa\" and his father."
+    the planet \"Harpa.\"\n\n Norman's goal is to find \"Harpa\" and his father.\n\n\nNorman
+    fights with a modified blaster ready for long range combat."
 --- !u!222 &96820680
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1858,7 +1859,8 @@ MonoBehaviour:
     explorer, has discovered more worlds than can be counted, a life dedicated to
     the stars.\r\n\r\nHe had a son named Norman, in whom he instilled his passion
     for stars and legends. Fernando will set out on one last expedition to locate
-    the last of the legendary planets:\n \"Harpa.\"\n"
+    the last of the legendary planets:\n \"Harpa.\"\n\nFernando fights with a modified
+    blaster ready for close combat.\n"
 --- !u!222 &1059373280
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2170,7 +2172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1207742101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3030,7 +3032,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1757538516
 RectTransform:
   m_ObjectHideFlags: 0

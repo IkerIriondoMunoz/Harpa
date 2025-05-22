@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Camera: {fileID: 5226339472817324102}
-  projectile: {fileID: 3642574692307826558, guid: 3f48d070c06ec914d82339de78db21e3, type: 3}
+  projectile: {fileID: 3642574692307826558, guid: dd2a711ea0c47bc45a46ecb34eebcdad, type: 3}
   firePoint: {fileID: 4921765389273052909}
   Player: {fileID: 3800632061824476783}
   projectileSpeed: 30
@@ -864,7 +864,7 @@ Transform:
   m_GameObject: {fileID: 2909612164282830758}
   serializedVersion: 2
   m_LocalRotation: {x: -0.31164336, y: -0.07828243, z: -0.025771953, w: 0.94661826}
-  m_LocalPosition: {x: 0.46371537, y: 0.7135689, z: -0.3825996}
+  m_LocalPosition: {x: 0.68081117, y: -0.26238024, z: -1.686222}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2392,7 +2392,7 @@ Transform:
   m_GameObject: {fileID: 8078167727571907230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.92, z: 0.564}
+  m_LocalPosition: {x: 0, y: 1.2, z: 0.564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

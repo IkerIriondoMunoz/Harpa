@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 869.6658
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -223.40512
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
       propertyPath: m_LocalRotation.w
@@ -56,5 +56,31 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: -8700617353114198275, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8716546233591030338}
   m_SourcePrefab: {fileID: 100100000, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
+--- !u!1 &5657434528650623499 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 55e26227257d3084f9bf21e1cee7d2ca, type: 3}
+  m_PrefabInstance: {fileID: 4774474673518987098}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &8716546233591030338
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5657434528650623499}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: ff2f10cbdb8d33e44baac5725e712e25, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: c2e48b63d9b7de14a86a3c2e36221891, type: 2}
+  - {fileID: 7400000, guid: ff2f10cbdb8d33e44baac5725e712e25, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0

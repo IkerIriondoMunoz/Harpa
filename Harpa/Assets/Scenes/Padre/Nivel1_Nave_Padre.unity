@@ -663,9 +663,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
-      value: '4/5                                                                  
-        it''s been a long time since i left the earth, my son would have grown a
-        lot.  '
+      value: 4/5                                                                  
+        it's been a long time since i left the earth, my son must be arround 25 years
+        old now, the last time i saw him he was only 15. I hope he is not upset with
+        me.
       objectReference: {fileID: 0}
     - target: {fileID: 7726324089685073028, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_Name
@@ -16357,6 +16358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5035608616110347654, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
       value: 'i need to enter the captain code in order to reach the machines room
@@ -25918,6 +25923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5035608616110347654, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: _infoTextContent
       value: i forgot to stabilize the energy levels on the spaceship; i must do
@@ -29551,6 +29560,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723231703931235587, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5035608616110347654, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7372787026144098851, guid: 789bdd62dc2b08046aa68cf822dcb8c1, type: 3}
@@ -35130,6 +35143,18 @@ PrefabInstance:
     - target: {fileID: 2128172796691459404, guid: efacff8b6ee599040b83c9d71c8d2c56, type: 3}
       propertyPath: m_Name
       value: Player_Padre
+      objectReference: {fileID: 0}
+    - target: {fileID: 2772693567927868834, guid: efacff8b6ee599040b83c9d71c8d2c56, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6169759
+      objectReference: {fileID: 0}
+    - target: {fileID: 2772693567927868834, guid: efacff8b6ee599040b83c9d71c8d2c56, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.024589956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2772693567927868834, guid: efacff8b6ee599040b83c9d71c8d2c56, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.3029022
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

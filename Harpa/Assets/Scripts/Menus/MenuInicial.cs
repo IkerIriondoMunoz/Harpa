@@ -6,6 +6,7 @@ public class MenuInicial : MonoBehaviour
     public Canvas _controlsCanvas;
     public Canvas _canvasMenu;
     public int _nextScene;
+    public int _escenaCreditos;
 
 
     private void Start()
@@ -34,5 +35,10 @@ public class MenuInicial : MonoBehaviour
     {
         _canvasMenu.gameObject.SetActive(true);
         _controlsCanvas.gameObject.SetActive(false);
+    }
+
+    public void Creditos()
+    {
+        SceneManager.LoadScene(_escenaCreditos);
     }
 }

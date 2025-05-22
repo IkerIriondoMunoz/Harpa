@@ -18,6 +18,7 @@ public class PuzzleOrden : MonoBehaviour
     private bool _isGameOpen = false;
 
     public SC_ThirdPersonMovement player;
+    public AudioSource _audioSource;
 
 
     private void Start()
@@ -117,6 +118,8 @@ public class PuzzleOrden : MonoBehaviour
         Destroy(_puerta);
 
         player.cursorLockUnlock(true);
+
+        _audioSource.Play();
 
     }
 }

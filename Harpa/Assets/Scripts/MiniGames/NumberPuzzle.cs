@@ -20,6 +20,7 @@ public class NumberPuzzle : MonoBehaviour
     private List<int> _currentInput = new List<int>();
     private bool _isPlayerInTrigger = false;
     private bool _isGameOpen = false;
+    public AudioSource _audioSource;
 
     private void Start()
     {
@@ -140,6 +141,7 @@ public class NumberPuzzle : MonoBehaviour
         Destroy(_puerta);
 
         player.cursorLockUnlock(true);
+        _audioSource.Play();
     }
 
     private IEnumerator ShowMessage(string message, Color color, float duration)

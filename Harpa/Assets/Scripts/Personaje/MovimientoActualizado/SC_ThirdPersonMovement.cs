@@ -19,7 +19,9 @@ public class SC_ThirdPersonMovement : MonoBehaviour
     public bool cameraLock = false;
     public float turnSmoothTime = 0.1f;
     float turnSmoothVelocity;
-    // Update is called once per frame
+
+    public AudioSource footstepSource;
+    private float stepTimer = 0f;
 
     private void Start()
     {
@@ -61,6 +63,19 @@ public class SC_ThirdPersonMovement : MonoBehaviour
             cameraLock = false;
             animator.SetBool("isAiming", false);
             cameraPlayer.Lens.FieldOfView = 60f;
+        }
+
+        bool isMoving = Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0;
+
+        if (isMoving)
+        {
+            stepTimer += Time.deltaTime;
+
+            if (stepTimer >= 0.5f)
+            {
+                footstepSource.Play();
+                stepTimer = 0f;
+            }
         }
     }
 

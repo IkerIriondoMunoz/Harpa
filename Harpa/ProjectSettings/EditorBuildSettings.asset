@@ -41,6 +41,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Padre/CinematicaFinalPadre.unity
     guid: 52724025d22f4f948bb751a0e19d4899
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 98d05bb30b429904c92348cba8735810
+  - enabled: 1
+    path: Assets/Scenes/GameOverPader.unity
+    guid: 043ce6ba5e047f34fa2666d66f96bc4a
+  - enabled: 1
+    path: Assets/Scenes/GameOverHijo.unity
+    guid: a46a324b3f3ca524b9dc6495b357e79b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

@@ -12,6 +12,7 @@ public class Cristal : MonoBehaviour
     public float _damage = 40f;
     private bool _onTrigger;
 
+
     private void OnTriggerEnter(Collider other)
     {
         if (!activada && other.CompareTag("Player"))
@@ -43,7 +44,7 @@ public class Cristal : MonoBehaviour
         {
             playerLife.Damage(_damage);
         }
-
+        
         Destroy(gameObject);
     }
 }

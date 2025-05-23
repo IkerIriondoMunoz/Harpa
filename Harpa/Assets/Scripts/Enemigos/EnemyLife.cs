@@ -5,7 +5,7 @@ public class EnemyLife : MonoBehaviour
 {
     public float _maxLife = 100f;
     public float _currentLife = 100f;
-    public float _damageRecived = 50f;
+    public float _damageRecived = 10f;
 
     void Start()
     {

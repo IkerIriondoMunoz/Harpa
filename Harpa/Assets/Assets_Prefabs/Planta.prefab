@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxLife: 100
   _currentLife: 100
-  _damageRecived: 50
+  _damageRecived: 25
 --- !u!4 &4141479276620523994 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: d544c09bcf63429479d02c14d147c2f6, type: 3}

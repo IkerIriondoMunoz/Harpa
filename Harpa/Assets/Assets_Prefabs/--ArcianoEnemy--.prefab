@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxLife: 100
   _currentLife: 100
-  _damageRecived: 50
+  _damageRecived: 10
 --- !u!1001 &4042050708738374356
 PrefabInstance:
   m_ObjectHideFlags: 0

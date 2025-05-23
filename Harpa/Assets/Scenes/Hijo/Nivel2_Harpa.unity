@@ -962,7 +962,7 @@ PrefabInstance:
       objectReference: {fileID: 1576043458}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.7000046
+      value: 9.91
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -970,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.107073
+      value: -6.23
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2221,6 +2221,10 @@ PrefabInstance:
     - target: {fileID: 5335029168325447439, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: _currentLife
       value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 5335029168325447439, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
+      propertyPath: _damageRecived
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6883206775320919030, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_Name
@@ -4617,7 +4621,7 @@ GameObject:
   m_Component:
   - component: {fileID: 671846503}
   m_Layer: 0
-  m_Name: --ARCIANOS--
+  m_Name: --HARPIANOS--
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7744,7 +7748,7 @@ PrefabInstance:
       objectReference: {fileID: 686499641}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.010002
+      value: -7.41
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7752,7 +7756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.7
+      value: -1.31
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8717,7 +8721,7 @@ PrefabInstance:
       objectReference: {fileID: 1576043458}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.7000046
+      value: 6.55
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8725,7 +8729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.7
+      value: 17.18
       objectReference: {fileID: 0}
     - target: {fileID: 8647522804388623255, guid: fcc4515d390847c42977312c29ac59ff, type: 3}
       propertyPath: m_LocalRotation.w

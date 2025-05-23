@@ -702,7 +702,7 @@ Transform:
   m_GameObject: {fileID: 2695083452377507730}
   serializedVersion: 2
   m_LocalRotation: {x: -0.31164336, y: -0.07828241, z: -0.025771946, w: 0.94661826}
-  m_LocalPosition: {x: 0.7113657, y: -0.39973766, z: -1.8696966}
+  m_LocalPosition: {x: 0.6808107, y: -0.26237833, z: -1.6862192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2585,7 +2585,7 @@ MonoBehaviour:
   firePoint: {fileID: 2538532971291966596}
   Player: {fileID: 1962153370836967857}
   projectileSpeed: 30
-  fireRate: 4
+  fireRate: 2.5
   audioSource: {fileID: 8582619316689692531}
 --- !u!195 &8569232528125308880
 NavMeshAgent:
